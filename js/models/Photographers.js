@@ -1,4 +1,4 @@
-import API from './../../api/API.js';
+import API from '../../api/API.js';
 
 export default class Photographers {
 
@@ -7,7 +7,7 @@ export default class Photographers {
     }
 
     async index() {
-        return await this.api.get("./../api/data.json")
+        return await this.api.get("../../api/data.json")
             .then(data => {
                 return data.photographers
             })
