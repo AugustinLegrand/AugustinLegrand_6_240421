@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photographer</title>
+        <link rel="stylesheet" href="./css/photographer.css">
+        <meta name="description" content="Page de photographe avec son portfolio" />
+        <script src="https://kit.fontawesome.com/9fe5b2e36f.js" crossorigin="anonymous" defer></script>
+    </head>
+    <body>
+        <header class="header" role="heading" aria-label="Haut de page">
+            <a href="/"><img class="banner" role="banner" src="./resources/fisheye-logo.png" alt="Fisheye Home page"></a>
+        </header>
+        <main class="main" role="main">
+            <section class="photographer">
+                <section class="photographer-info">
+                    <div>
+                        <div class="nameContact">
+                            <h1 class="photographer-name">Mini Kell</h1>
+                            <button id="btnContact" aria-label="Contact Me">Contactez-moi</button>
+                        </div>
+                        <p class="photographer-location">London, UK</p>
+                        <p class="photographer-tagline">Voir le beau dans le quotidien</p>
+                        <nav class="photographer-tags">
+                            <span>#Portrait</span>
+                            <span>#Art</span>
+                            <span>#Fashion</span>
+                            <span>#Architecture</span>
+                        </nav>
+                    </div>
+                </section>
+                <img class="photographer-portrait" src="./resources/Photographers/Ellie-RoseWilkens.jpg" alt="" />
+            </section>
+            <div class="medias-filter medias-filter-position">
+                <label for="">Trier par</label>
+                <div class="custom-select">
+                    <select id="selectMedias">
+                        <option class="mediasSelect" value="popularity">Popularité</option>
+                        <option class="mediasSelect" value="date">Date</option>
+                        <option class="mediasSelect" value="title">Titre</option>
+                    </select>
+                </div>
+            </div>
+            <section class="medias">
+            </section>
+            <section class="modal-media" aria-hidden="true" aria-label="Image closeup view">
+                <div class="modal-media-cache"></div>
+                <div class="modal-media-container">
+                    <button class="modal-media-close" aria-label="Close dialog">X</button>
+                    <a class="modal-media-prev" aria-label="Previous image">&#10094;</a>
+                    <div>
+                        <div class="modal-media-container-media"></div>
+                        <p class="modal-media-container-name">Test texte de l'image</p>
+                    </div>
+                    <a class="modal-media-next" aria-label="Next image">&#10095;</a>
+                </div>
+            </section>
+            <section class="modal-contact" role="dialog" aria-labelledby="2" aria-hidden="true">
+                <header class="modal-contact-header">
+                    <h1 class="modal-contact-header-title" aria-labelledby="2" aria-label="Contact me Mini keel">Contactez-moi Mimi Keel</h1>
+                    <button class="modal-contact-header-close">X</button>
+                </header>
+                <div class="modal-contact-body">
+                    <div>
+                        <label for="firstName">Prénom</label>
+                        <input type="text" id="firstName" />
+                    </div>
+                    <div>
+                        <label for="lastName">Nom</label>
+                        <input type="text" id="lastName" />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" />
+                    </div>
+                    <div>
+                        <label for="message">Votre message</label>
+                        <textarea cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="contactBTN">
+                        <button class="sendContact">Envoyer</button>
+                    </div>
+                </div>
+            </section>
+            <section class="info-photographer">
+                <div>
+                    <p class="info-photographer-likes">245 000</p>
+                    <i class="fas fa-heart" aria-label="likes"></i>
+                </div>
+                <div>
+                    <p class="info-photographer-price">300€ / jour</p>
+                </div>
+            </section>
+        </main>
+        <script src="./js/app.js" type="module"></script>
+    </body>
+</html>

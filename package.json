@@ -1,0 +1,11 @@
+{
+  "name": "projet6",
+  "version": "1.0.0",
+  "description": "Projet 6",
+  "main": "index.js",
+  "author": "Augustin",
+  "license": "MIT",
+  "scripts": {
+    "sass": "sass --watch sass:css --style compressed"
+  }
+}
