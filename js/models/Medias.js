@@ -6,7 +6,7 @@ export default class Medias {
     }
 
     async index() {
-        const data = fetch("../data.json")
+        const data = fetch("~/../js/data.json")
         .then(resp => resp.json())
             .then(data => {
                 return data

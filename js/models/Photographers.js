@@ -11,7 +11,7 @@ export default class Photographers {
             })
             */
         console.log("LOAD DATA PHOTOGRAPHERS");
-        const data = fetch("../data.json")
+        const data = fetch("~/../js/data.json")
         .then(resp => resp.json())
             .then(data => {
                 return data
