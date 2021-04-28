@@ -1,5 +1,5 @@
 
-import API from './../../api/API';
+import API from './../../api/API.js';
 
 export default class Photographers {
 
