@@ -1,4 +1,5 @@
-import { API } from '~/api/API.js';
+
+import { API } from 'api/API.js';
 
 export default class Medias {
 
