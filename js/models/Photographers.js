@@ -1,4 +1,3 @@
-
 export default class Photographers {
 
     constructor() {
@@ -11,6 +10,7 @@ export default class Photographers {
                 return data.photographers
             })
             */
+        console.log("LOAD DATA PHOTOGRAPHERS");
         const data = fetch("../data.json")
         .then(resp => resp.json())
             .then(data => {
