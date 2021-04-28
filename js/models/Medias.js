@@ -8,7 +8,7 @@ export default class Medias {
     }
 
     async index() {
-        return await this.api.get("./../../api/data.json")
+        return await this.api.get("https://augustinlegrand.github.io/AugustinLegrand_6_240421/api/data.json")
             .then(data => {
                 return data.media
             })
