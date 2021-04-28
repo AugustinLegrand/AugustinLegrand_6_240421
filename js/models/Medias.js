@@ -1,5 +1,5 @@
 
-import { API } from 'api/API.js';
+import API from './../../api/API.js';
 
 export default class Medias {
 
@@ -8,7 +8,7 @@ export default class Medias {
     }
 
     async index() {
-        return await this.api.get('~/api/data.json')
+        return await this.api.get("./../../api/data.json")
             .then(data => {
                 return data.media
             })
