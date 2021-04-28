@@ -1,17 +1,20 @@
 
-import API from './../../api/API.js';
 
 export default class Medias {
 
     constructor() {
-        this.api = new API()
     }
 
     async index() {
-        return await this.api.get("https://augustinlegrand.github.io/AugustinLegrand_6_240421/api/data.json")
+        const data = fetch("https://augustinlegrand.github.io/AugustinLegrand_6_240421/api/data.json")
+        .then(resp => resp.json())
             .then(data => {
-                return data.media
+                return data
             })
+        
+        return await data.then(pho => {
+            return pho.media
+        })
     }
 
     async getMedia(id) {

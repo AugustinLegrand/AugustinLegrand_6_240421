@@ -1,17 +1,26 @@
 
-import API from './../../api/API.js';
-
 export default class Photographers {
 
     constructor() {
-        this.api = new API()
     }
 
     async index() {
+        /*
         return await this.api.get("https://augustinlegrand.github.io/AugustinLegrand_6_240421/api/data.json")
             .then(data => {
                 return data.photographers
             })
+            */
+        const data = fetch("https://augustinlegrand.github.io/AugustinLegrand_6_240421/api/data.json")
+        .then(resp => resp.json())
+            .then(data => {
+                return data
+            })
+        
+        return await data.then(pho => {
+            console.log(pho);
+            return pho.photographers
+        })
     }
 
     async show(id) {
