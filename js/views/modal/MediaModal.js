@@ -1,4 +1,3 @@
-import Photographer from "../../controllers/Photographer.js";
 import { dispatcherV2 } from "../../render/Dispatcher.js";
 import Views from "../Views.js";
 

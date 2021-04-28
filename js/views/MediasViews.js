@@ -1,6 +1,6 @@
 import Photographer from "../controllers/Photographer.js";
 import Medias from "../models/Medias.js";
-import { dispatcher, dispatcherV2 } from "../render/Dispatcher.js";
+import { dispatcherV2 } from "../render/Dispatcher.js";
 import Views from "./Views.js";
 
 export default class MediasViews extends Views {

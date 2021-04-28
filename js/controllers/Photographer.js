@@ -4,9 +4,6 @@ import { dispatcherV2 } from "../render/Dispatcher.js";
 import Render from '../render/Render.js';
 import MediasViews from "../views/MediasViews.js";
 import MediaModal from "../views/modal/MediaModal.js";
-import PhotographersViews from '../views/PhotographersViews.js';
-import { dispatcher } from './../render/Dispatcher.js';
-
 export default class Photographer extends Render {
 
     constructor() {

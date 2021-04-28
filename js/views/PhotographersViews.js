@@ -1,4 +1,3 @@
-import TagsViews from "./TagsViews.js";
 import Views from "./Views.js";
 
 export default class PhotographersViews extends Views {
